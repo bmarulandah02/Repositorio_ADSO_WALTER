@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="bootstrap.min.css" />
+	</head>
+	<body class="container d-flex flex-wrap">
+		<!-- " -->
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem">
+			<div class="card border-danger mb-3" style="max-width: 20rem">
+				<h5>Ejercicio 1</h5>
+				<p>
+					Cree una función que reciba un id y devuelva únicamente el objeto del
+					producto correspondiente. Si no lo encuentra, debe devolver un mensaje
+					de error: "Producto no encontrado
+				</p>
+				<label class="col-form-label mt-4" for="inputDefault"
+					>ID del Producto</label
+				>
+				<input
+					type="text"
+					class="form-control"
+					placeholder="Ingresa id del Producto"
+					id="buscarProducto" />
+				<button
+					type="submit"
+					class="btn btn-primary mt-3"
+					onclick="encontrarProducto()">
+					Buscar producto
+				</button>
+			</div>
+		</div>
+
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem">
+			<div class="card border-danger mb-3" style="max-width: 20rem">
+				<h5>Ejercicio 2</h5>
+				<p>
+					Comprueba si al menos uno de los productos del inventario supera los
+					$1000. La función debe devolver un booleano (true/false).
+				</p>
+
+				<button
+					type="submit"
+					class="btn btn-primary mt-3"
+					onclick="verificarProducto()">
+					Verificar
+				</button>
+			</div>
+		</div>
+
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem">
+			<div class="card border-danger mb-3" style="max-width: 20rem">
+				<h4>Ejercicio 3</h4>
+				<p>
+					Queremos asegurarnos de que todos los productos de la tienda tienen al
+					menos una valoración (que el array valoraciones no esté vacío).
+					Devuelve true o false.
+				</p>
+				<button
+					type="submit"
+					class="btn btn-primary mt-3"
+					onclick="verificarValoracion()">
+					Valorar
+				</button>
+			</div>
+		</div>
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem">
+			<div class="card border-danger mb-3" style="max-width: 20rem">
+				<h4>Ejercicio 4</h4>
+				<p>
+					Crea una función que reciba una cadena de texto (por ejemplo, "pro") y
+					devuelva todos los productos cuyo nombre contenga ese texto, sin
+					importar si está en mayúsculas o minúsculas.
+				</p>
+				<input
+					type="text"
+					class="form-control"
+					placeholder="Ingresa texto del Producto"
+					id="buscarTexto" />
+				<button
+					type="submit"
+					class="btn btn-primary mt-3"
+					onclick="verificarTexto()">
+					verificar texto
+				</button>
+			</div>
+		</div>
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem">
+			<div class="card border-danger mb-3" style="max-width: 20rem">
+				<h4>Ejercicio 5</h4>
+				<p>
+					Encuentra el primer producto que tenga una valoración media (promedio)
+					superior a 4.5. (Pista: tendrá que calcular el promedio de las
+					valoraciones dentro de la búsqueda).
+				</p>
+				<button
+					type="submit"
+					class="btn btn-primary mt-3"
+					onclick="verificarValoracionMedia()">
+					verificar valoración media
+				</button>
+			</div>
+		</div>
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem">
+			<div class="card border-danger mb-3" style="max-width: 20rem">
+				<h4>Ejercicio 6</h4>
+				<p>
+					Genera un nuevo array que contenga únicamente los nombres de los
+					productos en mayúsculas. (Ej: ["LAPTOP PRO", "TECLADO MECÁNICO",
+					...]).
+				</p>
+				<button
+					type="submit"
+					class="btn btn-primary mt-3"
+					onclick="GenerarArrayMayusculas()">
+					generar array en mayúsculas
+				</button>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
